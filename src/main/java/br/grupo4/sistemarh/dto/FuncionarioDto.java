@@ -10,7 +10,7 @@ import java.time.LocalDate;
 
 public record FuncionarioDto(
         Long id,
-        @NotNull @NotBlank String nome,
+        String nome,
         @NotNull @NotBlank String cargo,
         @NotNull double salario,
         @NotNull LocalDate dataAdmissao,

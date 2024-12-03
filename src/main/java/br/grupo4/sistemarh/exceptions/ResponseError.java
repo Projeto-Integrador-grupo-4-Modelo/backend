@@ -1,5 +1,12 @@
 package br.grupo4.sistemarh.exceptions;
 
-public record ResponseError(String message, org.springframework.http.HttpStatus httpStatus,
-                            java.time.LocalDateTime dateTime) {
+import org.springframework.http.HttpStatus;
+
+import java.time.LocalDateTime;
+
+public record ResponseError(
+        String message,
+        HttpStatus httpStatus,
+        LocalDateTime dateTime
+) {
 }
